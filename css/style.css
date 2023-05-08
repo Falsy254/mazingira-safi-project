@@ -5,6 +5,31 @@
 }
 
 .container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.motiv {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.teams {
+  display: flex;
+  justify-content: space-between;
+=======
+.container {
   width: 80%;
   margin: 0 auto;
 }
