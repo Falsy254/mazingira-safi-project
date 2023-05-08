@@ -1,0 +1,21 @@
+
+@use "../../utilities/mixins" as *;
+.nav{
+    background-color: lightgray;
+    &__container{
+        @include flex(space-between,center);
+        padding: 1em;
+        margin: 1em;
+    }
+}
+ul{
+    @include flex(space-between,center)
+}
+li{
+    padding: 1em;
+    margin: 1em;
+    a{
+        color: black;
+    }
+}
+
