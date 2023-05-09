@@ -1,14 +1,33 @@
-.hero {
-  background-image:  url("../../../images/hero\ image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 80vh;
-  padding: 3em;
-  color:green;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  }
+ @use "../../utilities/mixins" as *;
+ @use "../../utilities/variables" as *;
 
+.hero{
+  @include flex(center,center,column);
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../../../images/hero image.jpg") no-repeat center center/cover;
+  height: 80vh;
+  div{
+    text-align: center;
+  }
+h1{
+  color: $white;
+  text-align: center;
+  font-size: 3rem;
+}
+p{
+  font-size: 1rem;
+  color: green;
+}
+button{
+  font-size: 1.5rem;
+  padding: .5em 1.5em;
+  background-color:blue;
+  margin: 0 auto;
+}
+&__cta{
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+}
+  }
