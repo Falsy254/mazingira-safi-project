@@ -1,3 +1,6 @@
 @use"./utilities/base";
-@use "./sections/nav";
-@use "./sections/hero";
+@use "./pages/home/nav";
+@use "./pages/home/hero";
+@use "./pages/about/about";
+@use "./pages/home/products";
+
