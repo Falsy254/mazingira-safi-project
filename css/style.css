@@ -32,19 +32,17 @@ a {
   flex-direction: row;
   padding: 1em;
 }
-
-ul {
+.nav__container ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-
-li {
+.nav__container ul li {
   padding: 1em;
   margin: 1em;
 }
-li a {
+.nav__container ul li a {
   color: black;
 }
 
@@ -80,30 +78,6 @@ li a {
   flex-direction: column;
   justify-content: space-between;
   padding: 1em;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  margin: 0 auto;
-  width: 80%;
-}
-
-.content {
-  display: flex;
-  justify-content: space-around;
-}
-
-.motiv {
-  display: flex;
-  gap: 1em;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
 }
 
 .about {
@@ -205,17 +179,7 @@ li a {
 .about__card {
   width: 25%;
   padding: 1em;
-  box-shadow: 0 0 5px lightgra
-}
-
-.flex {
-  display: flex;
-  justify-content: space-around;
-}
-
-.teams {
-  display: flex;
-  justify-content: space-between;
+  box-shadow: 0 0 5px lightgray;
 }
 
 .products {
@@ -239,4 +203,33 @@ li a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.footer__container ul li {
+  padding: 0.5em 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.footer__container .btn {
+  padding: 0.5em 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 5px lightgray;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+.footer__container input {
+  padding: 0.5em;
+  font-size: 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border-radius: 10px;
 }
