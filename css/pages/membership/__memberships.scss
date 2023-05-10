@@ -1,0 +1,14 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+
+.membership{
+    &__container{
+        @include flex(space-between, flex-start);
+    }
+    &__right{
+        &__container{
+            @include flex(flex-start,center);
+            gap: 1em;
+        }
+    }
+}

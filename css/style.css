@@ -82,30 +82,6 @@ li a {
   padding: 1em;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  margin: 0 auto;
-  width: 80%;
-}
-
-.content {
-  display: flex;
-  justify-content: space-around;
-}
-
-.motiv {
-  display: flex;
-  gap: 1em;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-}
-
 .about {
   border: 1px solid red;
   width: 80%;
@@ -140,7 +116,7 @@ li a {
   box-shadow: 0 0 5px lightgray;
 }
 .about__content p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .about__missionDiv {
   display: flex;
@@ -205,17 +181,7 @@ li a {
 .about__card {
   width: 25%;
   padding: 1em;
-  box-shadow: 0 0 5px lightgra
-}
-
-.flex {
-  display: flex;
-  justify-content: space-around;
-}
-
-.teams {
-  display: flex;
-  justify-content: space-between;
+  box-shadow: 0 0 5px lightgray;
 }
 
 .products {
@@ -239,4 +205,18 @@ li a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.membership__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.membership__right__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
 }
