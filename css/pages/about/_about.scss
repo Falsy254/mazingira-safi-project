@@ -31,7 +31,8 @@
     }
   }
   &__content p {
-    font-size: 1.5rem;
+    font-size: 1rem;
+
   }
   &__missionDiv {
     @include flex(center, center);
@@ -81,6 +82,7 @@
     
   &__values{
     @include flex(center,center);
+
     padding:1.5em;
     gap:2em;
 }

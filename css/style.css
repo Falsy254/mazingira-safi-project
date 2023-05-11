@@ -114,7 +114,7 @@ a {
   box-shadow: 0 0 5px lightgray;
 }
 .about__content p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .about__missionDiv {
   display: flex;
@@ -206,11 +206,13 @@ a {
 }
 
 .footer__container {
+.membership__container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
 }
+
 .footer__container ul li {
   padding: 0.5em 0;
   display: flex;
@@ -232,4 +234,12 @@ a {
   margin-bottom: 1em;
   margin-top: 1em;
   border-radius: 10px;
+
+.membership__right__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+
 }
