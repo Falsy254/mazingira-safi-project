@@ -1,0 +1,32 @@
+@use "../../utilities/mixins" as *;
+@use "../../utilities/variables" as *;
+
+.footer {
+  &__container {
+    @include flex(space-between, flex-start);
+    ul {
+      li {
+        padding: 0.5em 0;
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+      }
+    }
+    .btn {
+      padding: 0.5em 1.5em;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 0 5px $light-gray;
+      font-size: 1em;
+      margin-top: .5em;
+    }
+    input{
+      padding: 0.5em;
+      font-size: 1em;
+      margin-bottom: 1em;
+      margin-top: 1em;
+      border-radius: 10px;
+    }
+  }
+}
