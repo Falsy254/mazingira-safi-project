@@ -4,3 +4,11 @@
     align-items: $align;
     flex-direction: $direction;
 }
+
+@mixin button($bg-color){
+    padding: 1em;
+    margin-top: 4em;
+    background-color: $bg-color;
+    border:none;
+    border-radius: 5px;
+}
