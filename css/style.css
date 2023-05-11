@@ -68,14 +68,17 @@ body {
   font-size: 3rem;
 }
 .hero p {
-  font-size: 1rem;
-  color: green;
+  font-size: 2rem;
+  color: #fcffb2;
 }
 .hero button {
   font-size: 1.5rem;
   padding: 0.5em 1.5em;
-  background-color: blue;
+  background-color: #fcffb2;
   margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px lightgray;
 }
 .hero__cta {
   height: 30%;
