@@ -6,6 +6,7 @@
   &__list {
     padding: 1.5em;
     @include flex(space-between, center);
+    flex-wrap: wrap;
     &__items {
       div {
         width: 300px;

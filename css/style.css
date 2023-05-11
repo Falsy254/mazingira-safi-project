@@ -241,6 +241,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .products__list__items div {
   width: 300px;
@@ -258,6 +259,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .footer__container ul li {
   padding: 0.5em 0;
@@ -283,6 +285,11 @@ body {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 500px) {
+  .footer__container {
+    flex-direction: column;
+  }
+}
 .contact {
   height: 80vh;
   padding: 1em;
