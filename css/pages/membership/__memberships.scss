@@ -1,14 +1,53 @@
 @use "../../utilities/variables" as *;
 @use "../../utilities/mixins" as *;
 
-.membership{
-    &__container{
-        @include flex(space-between, flex-start);
+.membership {
+  border: 2em solid $light-gray;
+  height: 100vh;
+  @include flex(center, center);
+  &__container {
+    border: 1em solid $light-gray;
+    padding: 2em;
+    @include flex(space-between, center);
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 0.5em;
+      margin-top: 0.5em;
     }
-    &__right{
-        &__container{
-            @include flex(flex-start,center);
-            gap: 1em;
+    h1 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+  }
+
+  &__right {
+    &__container {
+      @include flex(flex-start, flex-start);
+      border: 1em solid lightgray;
+      padding: 2em;
+
+      .collectors, .recyclers{
+        
+        ol{
+            padding: 1em;
         }
+        padding: 1em;
+      }
+
+      .collectors{
+        border-right:1px solid $light-gray;
+
+      }
     }
+  }
+  .button {
+    &__information {
+      @include button($green);
+      a{
+        color: white;
+      }
+    }
+  }
 }
