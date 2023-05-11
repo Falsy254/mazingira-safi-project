@@ -42,26 +42,40 @@ body {
   padding: 1em;
 }
 .nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.nav ul li {
+  padding: 1em;
+  margin: 1em;
+}
+.nav ul li a {
+  color: black;
+}
 
+.nav {
+  background-color: lightgray;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 1em;
+}
 .nav__container ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
-
-.nav ul li {
-  padding: 1em;
-  margin: 1em;
-}
-.nav ul li a {
-
 .nav__container ul li {
   padding: 1em;
   margin: 1em;
 }
 .nav__container ul li a {
-
   color: black;
 }
 
@@ -223,38 +237,12 @@ body {
      object-fit: cover;
 }
 
-
-.membership {
-  border: 2em solid lightgray;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
 .footer__container {
-.membership__container {
-  border: 1em solid lightgray;
-  padding: 2em;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
 }
-
-.membership__container input[type=text],
-.membership__container input[type=email],
-.membership__container input[type=password] {
-  padding: 0.5em;
-  margin-top: 0.5em;
-}
-.membership__container h1 {
-  text-align: center;
-  margin-bottom: 1em;
-}
-
-
 .footer__container ul li {
   padding: 0.5em 0;
   display: flex;
@@ -276,14 +264,39 @@ body {
   margin-bottom: 1em;
   margin-top: 1em;
   border-radius: 10px;
+}
 
-
+.membership {
+  border: 2em solid lightgray;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.membership__container {
+  border: 1em solid lightgray;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.membership__container input[type=text],
+.membership__container input[type=email],
+.membership__container input[type=password] {
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+.membership__container h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
 .membership__right__container {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
-
   border: 1em solid lightgray;
   padding: 2em;
 }
@@ -305,8 +318,4 @@ body {
 }
 .membership .button__information a {
   color: white;
-
-  gap: 1em;
-
-
 }
