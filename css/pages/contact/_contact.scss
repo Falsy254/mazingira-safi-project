@@ -3,7 +3,8 @@
 
 .contact{
     &__container{
-        @include flex(space-around,center)
+        @include flex(space-around,center);
+        flex-direction: column;
     }
     height: 80vh;
     padding: 1em;
@@ -18,7 +19,25 @@
         width: 200%;
 
     }
-    p{
-        font-size: 2rem;
+    button{
+        @include button($green);
+    text-transform: uppercase;
+          color: white;
+          cursor: pointer;
+        
     }
+    h3{
+        font-size: 3rem;
+        color:green
+    }
+  .form{
+    width: 80%;
+    padding: 1em;
+  }
+  .form div{
+    overflow: hidden;
+  }
+  .input{
+    width: 100%;
+  }
 }
