@@ -22,6 +22,11 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: #fcffb2;
+  font-family: "Archivo Narrow", sans-serif;
+}
+
 .nav {
   background-color: lightgray;
 }
@@ -225,6 +230,7 @@ a {
   box-shadow: 0 0 5px lightgray;
   font-size: 1em;
   margin-top: 0.5em;
+  border: none;
 }
 .footer__container input {
   padding: 0.5em;
@@ -232,4 +238,27 @@ a {
   margin-bottom: 1em;
   margin-top: 1em;
   border-radius: 10px;
+}
+
+.contact {
+  height: 80vh;
+  padding: 1em;
+  background-image: url(../../../images/recyle.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.contact__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.contact input[type=text], .contact input[type=email], .contact input[type=subject] {
+  padding: 2em;
+  margin-top: 2em;
+  width: 200%;
+}
+.contact p {
+  font-size: 2rem;
 }
