@@ -29,7 +29,7 @@ a {
 
 body {
   background-color: #fcffb2;
-  font-family: "Archivo Narrow", sans-serif
+  font-family: "Archivo Narrow", sans-serif;
 }
 
 .nav {
@@ -292,6 +292,7 @@ body {
 }
 .contact p {
   font-size: 2rem;
+}
 
 .membership {
   border: 2em solid lightgray;
