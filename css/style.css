@@ -303,6 +303,8 @@ body {
   margin-top: 2em;
   width: 200%;
 }
+.contact p {
+  font-size: 2rem;}
 .contact button {
   padding: 1em;
   margin-top: 4em;
