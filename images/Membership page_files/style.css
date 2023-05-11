@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  background-color: lightgray;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 1em;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.nav ul li {
+  padding: 1em;
+  margin: 1em;
+}
+.nav ul li a {
+  color: black;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../images/hero image.jpg") no-repeat center center/cover;
+  height: 80vh;
+}
+.hero div {
+  text-align: center;
+}
+.hero h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1rem;
+  color: green;
+}
+.hero button {
+  font-size: 1.5rem;
+  padding: 0.5em 1.5em;
+  background-color: blue;
+  margin: 0 auto;
+}
+.hero__cta {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.about {
+  border: 1px solid red;
+  width: 80%;
+  margin: auto;
+}
+.about h1 {
+  text-align: center;
+  margin: 1em 0;
+}
+.about a {
+  color: black;
+}
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid lightgray;
+  padding: 1em;
+  gap: 2em;
+}
+.about__content button {
+  padding: 1em 2em;
+  background-color: blue;
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: none;
+  margin-top: 2em;
+  box-shadow: 0 0 5px lightgray;
+}
+.about__content p {
+  font-size: 1rem;
+}
+.about__missionDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid lightgray;
+  gap: 2em;
+  padding: 2em;
+}
+.about__prospect {
+  box-shadow: 0 0 5px lightgray;
+  width: 25%;
+  height: 200px;
+  padding: 1em;
+}
+.about__icon {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.about__team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid lightgray;
+  gap: 2em;
+  padding: 2em;
+}
+.about__team img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about__team p {
+  box-shadow: o o 6px lightgray;
+}
+.about__teamImg {
+  height: 150px;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+.about__images {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 360px;
+  box-shadow: 0 0 6px lightgray;
+  padding: 2em;
+  gap: 2em;
+}
+.about__values {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 1.5em;
+  gap: 2em;
+}
+.about__card {
+  width: 25%;
+  padding: 1em;
+  box-shadow: 0 0 5px lightgray;
+}
+
+.products {
+  background-color: lightgray;
+  margin: 2em 0;
+  text-align: center;
+}
+.products__list {
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.products__list__items div {
+  width: 300px;
+  height: 300px;
+}
+.products__list__items img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.membership {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.membership__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.membership__container input[type=text], .membership__container input[type=email], .membership__container input[type=password] {
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+.membership__container h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.membership__right__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 2em;
+}

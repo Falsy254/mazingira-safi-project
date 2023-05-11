@@ -16,10 +16,45 @@ ul {
 p {
   line-height: 1.5;
   font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+ol {
+  line-height: 1.5;
 }
 
 a {
   text-decoration: none;
+}
+
+body {
+  background-color: #fcffb2;
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+.nav {
+  background-color: lightgray;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.nav ul li {
+  padding: 1em;
+  margin: 1em;
+}
+.nav ul li a {
+  color: black;
 }
 
 .nav {
@@ -45,6 +80,17 @@ a {
 .nav__container ul li a {
   color: black;
 }
+.nav__bars {
+  display: none;
+}
+@media (max-width: 769px) {
+  .nav .nav__bars {
+    display: block;
+  }
+  .nav .nav__right {
+    display: none;
+  }
+}
 
 .hero {
   display: flex;
@@ -63,14 +109,17 @@ a {
   font-size: 3rem;
 }
 .hero p {
-  font-size: 1rem;
-  color: green;
+  font-size: 2rem;
+  color: #fcffb2;
 }
 .hero button {
   font-size: 1.5rem;
   padding: 0.5em 1.5em;
-  background-color: blue;
+  background-color: #fcffb2;
   margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px lightgray;
 }
 .hero__cta {
   height: 30%;
@@ -81,9 +130,15 @@ a {
 }
 
 .about {
-  border: 1px solid red;
+  background-image: url(../../../images/images\ \(1\).jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: 1px solid lightgray;
   width: 80%;
   margin: auto;
+  padding: 1em;
+  gap: 2em;
 }
 .about h1 {
   text-align: center;
@@ -92,36 +147,31 @@ a {
 .about a {
   color: black;
 }
-.about__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  border: 2px solid lightgray;
-  padding: 1em;
-  gap: 2em;
-}
-.about__content button {
-  padding: 1em 2em;
-  background-color: blue;
-  font-size: 1rem;
-  font-weight: bold;
-  display: block;
-  margin: 0 auto;
-  border-radius: 5px;
-  border: none;
-  margin-top: 2em;
+.about__content .paragragh {
+  text-align: center;
   box-shadow: 0 0 5px lightgray;
 }
-.about__content p {
-  font-size: 1.5rem;
+.about__membership__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about button {
+  padding: 1em;
+  margin-top: 4em;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+}
+.about button a {
+  color: #fff;
 }
 .about__missionDiv {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border: 2px solid lightgray;
   gap: 2em;
   padding: 2em;
 }
@@ -141,9 +191,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  border: 2px solid lightgray;
   gap: 2em;
-  padding: 2em;
 }
 .about__team img {
   height: 100%;
@@ -154,7 +202,7 @@ a {
   box-shadow: o o 6px lightgray;
 }
 .about__teamImg {
-  height: 150px;
+  height: 250px;
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
@@ -163,7 +211,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 25%;
-  height: 360px;
+  height: 350;
   box-shadow: 0 0 6px lightgray;
   padding: 2em;
   gap: 2em;
@@ -225,6 +273,7 @@ a {
   box-shadow: 0 0 5px lightgray;
   font-size: 1em;
   margin-top: 0.5em;
+  border: none;
 }
 .footer__container input {
   padding: 0.5em;
@@ -232,4 +281,103 @@ a {
   margin-bottom: 1em;
   margin-top: 1em;
   border-radius: 10px;
+}
+
+.contact {
+  height: 80vh;
+  padding: 1em;
+  background-image: url(../../../images/recyle.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.contact__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-direction: column;
+}
+.contact input[type=text], .contact input[type=email], .contact input[type=subject] {
+  padding: 2em;
+  margin-top: 2em;
+  width: 200%;
+}
+.contact button {
+  padding: 1em;
+  margin-top: 4em;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+.contact h3 {
+  font-size: 3rem;
+  color: green;
+}
+.contact .form {
+  width: 80%;
+  padding: 1em;
+}
+.contact .form div {
+  overflow: hidden;
+}
+.contact .input {
+  width: 100%;
+}
+
+.membership {
+  border: 2em solid lightgray;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.membership__container {
+  border: 1em solid lightgray;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.membership__container input[type=text],
+.membership__container input[type=email],
+.membership__container input[type=password] {
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+.membership__container h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.membership__right__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  border: 1em solid lightgray;
+  padding: 2em;
+}
+.membership__right__container .collectors, .membership__right__container .recyclers {
+  padding: 1em;
+}
+.membership__right__container .collectors ol, .membership__right__container .recyclers ol {
+  padding: 1em;
+}
+.membership__right__container .collectors {
+  border-right: 1px solid lightgray;
+}
+.membership .button__information {
+  padding: 1em;
+  margin-top: 4em;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+}
+.membership .button__information a {
+  color: white;
 }

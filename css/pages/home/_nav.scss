@@ -1,5 +1,25 @@
-
 @use "../../utilities/mixins" as *;
+
+.nav {
+  background-color: lightgray;
+  &__container {
+    @include flex(space-between, center);
+    flex-wrap: wrap;
+    padding: 1em;
+  }
+
+  ul {
+    @include flex(space-between, center);
+    li {
+      padding: 1em;
+      margin: 1em;
+      a {
+        color: black;
+      }
+    }
+  }
+}
+
 .nav{
     background-color: lightgray;
     &__container{
@@ -14,6 +34,22 @@
                 a{
                     color: black;
                 }
+            }
+        }
+        
+    }
+    &__bars{
+
+        display: none;
+    }
+    @media (max-width: 769px) {
+       .nav{
+
+           &__bars{
+               display: block;
+            }
+            &__right{
+                display: none;
             }
         }
         

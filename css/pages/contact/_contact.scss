@@ -1,0 +1,43 @@
+@use "../../utilities/mixins" as *; 
+@use "../../utilities/variables" as *;
+
+.contact{
+    &__container{
+        @include flex(space-around,center);
+        flex-direction: column;
+    }
+    height: 80vh;
+    padding: 1em;
+    background-image: url(../../../images/recyle.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    input[type="text"], input[type="email"], input[type="subject"]{
+        padding: 2em;
+        margin-top: 2em;
+        width: 200%;
+
+    }
+    button{
+        @include button($green);
+    text-transform: uppercase;
+          color: white;
+          cursor: pointer;
+        
+    }
+    h3{
+        font-size: 3rem;
+        color:green
+    }
+  .form{
+    width: 80%;
+    padding: 1em;
+  }
+  .form div{
+    overflow: hidden;
+  }
+  .input{
+    width: 100%;
+  }
+}

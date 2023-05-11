@@ -14,14 +14,17 @@ h1{
   font-size: 3rem;
 }
 p{
-  font-size: 1rem;
-  color: green;
+  font-size: 2rem;
+  color:#fcffb2;
 }
 button{
   font-size: 1.5rem;
   padding: .5em 1.5em;
-  background-color:blue;
+  background-color:#fcffb2;
   margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px lightgray;
 }
 &__cta{
   height: 30%;
