@@ -16,19 +16,10 @@ ul {
 p {
   line-height: 1.5;
   font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-ol {
-  line-height: 1.5;
 }
 
 a {
   text-decoration: none;
-}
-
-body {
-  background-color: #fcffb2;
 }
 
 .nav {
@@ -90,15 +81,9 @@ body {
 }
 
 .about {
-  background-image: url(../../../images/images\ \(1\).jpeg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  border: 1px solid lightgray;
+  border: 1px solid red;
   width: 80%;
   margin: auto;
-  padding: 1em;
-  gap: 2em;
 }
 .about h1 {
   text-align: center;
@@ -107,31 +92,36 @@ body {
 .about a {
   color: black;
 }
-.about__content .paragragh {
-  text-align: center;
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid lightgray;
+  padding: 1em;
+  gap: 2em;
+}
+.about__content button {
+  padding: 1em 2em;
+  background-color: blue;
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: none;
+  margin-top: 2em;
   box-shadow: 0 0 5px lightgray;
 }
-.about__membership__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.about button {
-  padding: 1em;
-  margin-top: 4em;
-  background-color: green;
-  border: none;
-  border-radius: 5px;
-}
-.about button a {
-  color: #fff;
+.about__content p {
+  font-size: 1rem;
 }
 .about__missionDiv {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  border: 2px solid lightgray;
   gap: 2em;
   padding: 2em;
 }
@@ -151,7 +141,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  border: 2px solid lightgray;
   gap: 2em;
+  padding: 2em;
 }
 .about__team img {
   height: 100%;
@@ -162,7 +154,7 @@ body {
   box-shadow: o o 6px lightgray;
 }
 .about__teamImg {
-  height: 250px;
+  height: 150px;
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
@@ -171,7 +163,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 25%;
-  height: 350;
+  height: 360px;
   box-shadow: 0 0 6px lightgray;
   padding: 2em;
   gap: 2em;
@@ -214,7 +206,6 @@ body {
 }
 
 .membership {
-  border: 2em solid lightgray;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -222,16 +213,12 @@ body {
   flex-direction: row;
 }
 .membership__container {
-  border: 1em solid lightgray;
-  padding: 2em;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
 }
-.membership__container input[type=text],
-.membership__container input[type=email],
-.membership__container input[type=password] {
+.membership__container input[type=text], .membership__container input[type=email], .membership__container input[type=password] {
   padding: 0.5em;
   margin-top: 0.5em;
 }
@@ -244,25 +231,5 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
-  border: 1em solid lightgray;
-  padding: 2em;
-}
-.membership__right__container .collectors, .membership__right__container .recyclers {
-  padding: 1em;
-}
-.membership__right__container .collectors ol, .membership__right__container .recyclers ol {
-  padding: 1em;
-}
-.membership__right__container .collectors {
-  border-right: 1px solid lightgray;
-}
-.membership .button__information {
-  padding: 1em;
-  margin-top: 4em;
-  background-color: green;
-  border: none;
-  border-radius: 5px;
-}
-.membership .button__information a {
-  color: white;
+  gap: 2em;
 }

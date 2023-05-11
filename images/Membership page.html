@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/pages/Membership.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./Membership page_files/style.css">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership page</title>
+  </head>
+  <body cz-shortcut-listen="true">
+    <section class="membership">
+      <div class="container">
+        <div class="membership__container">
+          <div class="membership__left">
+            <h3>Already a member? log in here</h3>
+            <div>
+              <input type="text" placeholder="Username">
+            </div>
+            <div>
+              <input type="text" placeholder="Password">
+            </div>
+            <div>
+              <button><a href="http://127.0.0.1:5500/pages/Membership.html#">LOG IN</a></button>
+            </div>
+          </div>
+
+          <div class="membership__right">
+            <h1>Become a member and enjoy our benefits</h1>
+
+            <div class="membership__right__container">
+            <div class="collectors">
+              <h3>collectors</h3>
+              <p>To be a colector you have to be:</p>
+              <ol>
+                <li>Registered with government as CBO</li>
+                <li>Original national identification card</li>
+                <li>two passports</li>
+              </ol>
+              <div>
+                <div>
+                  <input type="text" placeholder="Enter Name">
+                </div>
+                <div>
+                  <input type="text" placeholder="Enter Email">
+                </div>
+                <div>
+                  <input type="text" placeholder="Enter Password">
+                </div>
+                <div>
+                  <input type="text" placeholder="Enter Location">
+                </div>
+              </div>
+            </div>
+
+            <div class="recyclers">
+              <h3>Recyclers</h3>
+              <p>To be registered as a recycling industry you have to be:</p>
+              <ol>
+                <li>Registered by the government</li>
+                <li>To have worked and more than 5years experience</li>
+                <li>To have liable and reliable team</li>
+              </ol>
+              <div>
+                <input type="text" placeholder="Enter Name">
+              </div>
+              <div>
+                <input type="text" placeholder="Enter Email">
+              </div>
+              <div>
+                <input type="text" placeholder="Enter Password">
+              </div>
+              <div>
+                <input type="text" placeholder="Enter Location">
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number">
+              </div>
+            </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
