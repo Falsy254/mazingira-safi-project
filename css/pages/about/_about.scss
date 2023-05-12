@@ -95,11 +95,44 @@
     box-shadow: 0 0 5px $light-gray;
   }
 }
-@media (max-width:400px) {
+@media (max-width:1312px) {
   .about{
     &__missionDiv{
-      flex-direction: column;
+      // flex-direction: column;
+      padding: 0;
     }
+   &__prospect{
+width: 48%;
+   }
+   &__images{
+    width: 48%;
+
+   }
     
   }
+}
+@media (max-width:783px) {
+ .about{
+  &__missionDiv{
+    flex-direction: column;
+  }
+  &__prospect{
+    flex-direction: column;
+  }
+  &__team{
+    flex-direction: column;
+  }
+  &__values{
+    flex-direction: column; 
+  }
+  &__card{
+    width: 80%;
+  }
+  &__images{
+    width: 80%;
+  }
+  &__prospect{
+    width: 80%;
+  }
+ } 
 }
