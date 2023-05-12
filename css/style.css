@@ -230,9 +230,38 @@ body {
   box-shadow: 0 0 5px lightgray;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1312px) {
+  .about__missionDiv {
+    padding: 0;
+  }
+  .about__prospect {
+    width: 48%;
+  }
+  .about__images {
+    width: 48%;
+  }
+}
+@media (max-width: 783px) {
   .about__missionDiv {
     flex-direction: column;
+  }
+  .about__prospect {
+    flex-direction: column;
+  }
+  .about__team {
+    flex-direction: column;
+  }
+  .about__values {
+    flex-direction: column;
+  }
+  .about__card {
+    width: 80%;
+  }
+  .about__images {
+    width: 80%;
+  }
+  .about__prospect {
+    width: 80%;
   }
 }
 .products {
@@ -398,4 +427,28 @@ body {
 }
 .membership .button__information a {
   color: white;
+}
+
+@media (max-width: 1054px) {
+  .membership {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .membership__container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 899px) {
+  .membership {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .membership__right__container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 466px) {
+  .membership__right__container {
+    border: none;
+  }
 }

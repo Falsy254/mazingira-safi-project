@@ -51,3 +51,25 @@
     }
   }
 }
+@media (max-width: 1054px) {
+  .membership{
+    height:fit-content
+  }
+  .membership__container{
+      flex-direction: column;
+  }
+}
+  @media (max-width:899px) {
+    .membership{
+      height:fit-content
+    }
+    .membership__right__container{
+      flex-direction: column;
+    }
+  }
+@media (max-width: 466px) {
+  .membership__right__container{
+border: none;  
+}
+
+}
