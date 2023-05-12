@@ -5,7 +5,8 @@
   margin: 2em 0;
   &__list {
     padding: 1.5em;
-    @include flex(space-between, center);
+    @include flex(center, center);
+    gap: 1em;
     flex-wrap: wrap;
     &__items {
       div {
@@ -21,4 +22,14 @@
     }
   }
   text-align: center;
+}
+
+// Media query
+
+@media (max-width:400px){
+  .products{
+    div{
+      width: 100%;
+    }
+  }
 }

@@ -238,9 +238,10 @@ body {
 .products__list {
   padding: 1.5em;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
+  gap: 1em;
   flex-wrap: wrap;
 }
 .products__list__items div {
@@ -254,6 +255,11 @@ body {
      object-fit: cover;
 }
 
+@media (max-width: 400px) {
+  .products div {
+    width: 100%;
+  }
+}
 .footer__container {
   display: flex;
   justify-content: space-between;
