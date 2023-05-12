@@ -95,3 +95,11 @@
     box-shadow: 0 0 5px $light-gray;
   }
 }
+@media (max-width:400px) {
+  .about{
+    &__missionDiv{
+      flex-direction: column;
+    }
+    
+  }
+}
