@@ -97,7 +97,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./../../../images/hero-image.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://falsy254.github.io/mazingira-safi-project/images/hero-image.jpg") no-repeat center center/cover;
   height: 80vh;
 }
 .hero div {
@@ -299,7 +299,7 @@ body {
 .contact {
   height: 80vh;
   padding: 1em;
-  background-image: url(/css/pages/contact/images/recyle.jpg);
+  background-image: url("https://falsy254.github.io/mazingira-safi-project/images/recyle.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
