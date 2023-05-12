@@ -230,6 +230,11 @@ body {
   box-shadow: 0 0 5px lightgray;
 }
 
+@media (max-width: 400px) {
+  .about__missionDiv {
+    flex-direction: column;
+  }
+}
 .products {
   background-color: lightgray;
   margin: 2em 0;
@@ -303,8 +308,6 @@ body {
   margin-top: 2em;
   width: 200%;
 }
-.contact p {
-  font-size: 2rem;}
 .contact button {
   padding: 1em;
   margin-top: 4em;
