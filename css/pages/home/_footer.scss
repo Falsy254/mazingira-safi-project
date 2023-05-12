@@ -4,6 +4,7 @@
 .footer {
   &__container {
     @include flex(space-between, flex-start);
+    flex-wrap: wrap;
     ul {
       li {
         padding: 0.5em 0;
@@ -28,6 +29,18 @@
       margin-bottom: 1em;
       margin-top: 1em;
       border-radius: 10px;
+    }
+  }
+}
+
+
+// Media queries
+
+@media screen and (max-width:500px){
+  .footer{
+    &__container{
+      flex-direction: column;
+      
     }
   }
 }
